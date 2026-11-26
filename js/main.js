@@ -61,7 +61,6 @@ const PROJECTS = {
       'A split-level residence organized around a cantilevered oak stair and pocket doors opening onto an olive-tree courtyard, pulling natural light deep into the plan.',
     slides: [
       { src: 'images/project-mar-vista.jpg', label: '01 · Living & Courtyard', isDrawing: false },
-      { src: 'images/process-mar-vista-section.jpg', label: '02 · Section Diagram', isDrawing: true },
     ],
   },
   'arts-district': {
@@ -76,8 +75,7 @@ const PROJECTS = {
       'A dry-assembled retail display system for a raw concrete loft. Serial CNC-milled birch plywood fins carry slotted aluminum shelves and concealed linear lighting.',
     slides: [
       { src: 'images/project-arts-district.jpg', label: '01 · Installed View', isDrawing: false },
-      { src: 'images/process-arts-diagram.jpg', label: '02 · Assembly Diagram', isDrawing: true },
-      { src: 'images/process-arts-model.jpg', label: '03 · 1:10 Scale Prototype', isDrawing: false },
+      { src: 'images/process-arts-model.jpg', label: '02 · 1:10 Scale Prototype', isDrawing: false },
     ],
   },
 };
