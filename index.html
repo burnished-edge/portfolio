@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniel Nguyen — Licensed Architect in Los Angeles. Single-family residences, retail display installations, and contract BIM delivery. doniolnguyen.com" />
+  <title>Daniel Nguyen — Licensed Architect | doniolnguyen.com</title>
+
+  <!-- Google Fonts: DM Sans, Inter & IBM Plex Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom Architectural Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-arch">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column lh-1" href="#home">
+        <span class="brand-name">DANIEL NGUYEN</span>
+        <span class="brand-sub font-mono">ARCHITECT &middot; DONIOLNGUYEN.COM</span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4 mt-3 mt-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#practice">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION (FULL-BLEED PARALLAX) ==================== -->
+  <header id="home" class="hero-arch position-relative overflow-hidden d-flex align-items-end">
+    <div class="hero-bg-wrap" aria-hidden="true">
+      <img
+        src="images/project-laurel-canyon.jpg"
+        alt=""
+        class="hero-bg-img"
+        data-parallax="0.24"
+      />
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="container position-relative z-2 pb-5 pt-5">
+      <div class="row align-items-end gy-4">
+        <div class="col-lg-8">
+          <p class="hero-eyebrow font-mono mb-3">
+            LICENSED ARCHITECT &middot; LOS ANGELES, CA
+          </p>
+          <h1 class="display-3 hero-heading text-white mb-4">
+            Houses, displays,<br />and a few good detours.
+          </h1>
+          <p class="hero-lead text-white-75 mb-4 pe-lg-5">
+            Daniel Nguyen is a licensed architect in Los Angeles working on single-family residences, retail display installations, and contract BIM delivery.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#work" class="btn btn-arch-light">
+              Selected Work <i class="bi bi-arrow-down ms-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-arch-ghost">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-lg-end">
+          <div class="hero-caption font-mono text-white-75">
+            <span class="d-inline-block unbuilt-pill-dark mb-2">UNBUILT WORK</span>
+            <div class="small text-white">01 / Laurel Canyon Timber House</div>
+            <div class="small text-white-50">Single-Family Residence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== SELECTED WORK (PORTFOLIO) ==================== -->
+  <section id="work" class="section-arch">
+    <div class="container">
+      <div class="row align-items-end justify-content-between mb-5 gy-3 reveal">
+        <div class="col-lg-7">
+          <span class="section-index font-mono">01 / WORK</span>
+          <h2 class="section-title mt-2 mb-0">Selected Studies</h2>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-lg-end">
+          <div class="filter-bar d-flex flex-wrap gap-2" role="group" aria-label="Filter projects by typology">
+            <button type="button" class="btn btn-arch-filter active" data-filter="all">All (5)</button>
+            <button type="button" class="btn btn-arch-filter" data-filter="residential">Single-Family (3)</button>
+            <button type="button" class="btn btn-arch-filter" data-filter="retail">Retail Display (2)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid (2-Column Editorial Plates) -->
+      <div class="row g-4 g-lg-5" id="portfolioGrid">
+
+        <!-- Project 01 -->
+        <div class="col-md-6 portfolio-item reveal" data-category="residential">
+          <article class="arch-card h-100" role="button" tabindex="0"
+            data-bs-toggle="modal" data-bs-target="#projectModal"
+            data-project-id="laurel-canyon">
+            <div class="arch-card-media">
+              <img src="images/project-laurel-canyon.jpg" alt="Laurel Canyon Timber House exterior" class="arch-card-img" data-parallax-img />
+              <span class="unbuilt-badge font-mono">UNBUILT WORK</span>
+            </div>
+            <div class="arch-card-body pt-3">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <span class="font-mono small text-muted-arch">01 &middot; SINGLE-FAMILY RESIDENCE</span>
+                <span class="font-mono small text-muted-arch">3,400 SF</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 mb-0 arch-card-title">Laurel Canyon Timber House</h3>
+                <i class="bi bi-arrow-up-right arch-card-arrow"></i>
+              </div>
+              <p class="small text-muted-arch mt-2 mb-0">Los Angeles, CA. Deep cedar rafters and sliding steel doors opening onto a sloped canyon courtyard.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="col-md-6 portfolio-item reveal reveal-delay-1" data-category="residential">
+          <article class="arch-card h-100" role="button" tabindex="0"
+            data-bs-toggle="modal" data-bs-target="#projectModal"
+            data-project-id="silver-lake">
+            <div class="arch-card-media">
+              <img src="images/project-silver-lake.jpg" alt="Silver Lake Hillside Pavilion exterior" class="arch-card-img" data-parallax-img />
+              <span class="unbuilt-badge font-mono">UNBUILT WORK</span>
+            </div>
+            <div class="arch-card-body pt-3">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <span class="font-mono small text-muted-arch">02 &middot; SINGLE-FAMILY RESIDENCE</span>
+                <span class="font-mono small text-muted-arch">2,850 SF</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 mb-0 arch-card-title">Silver Lake Hillside Pavilion</h3>
+                <i class="bi bi-arrow-up-right arch-card-arrow"></i>
+              </div>
+              <p class="small text-muted-arch mt-2 mb-0">Silver Lake, CA. Board-formed concrete plinth and low timber roof tucked under existing oaks.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="col-md-6 portfolio-item reveal" data-category="retail">
+          <article class="arch-card h-100" role="button" tabindex="0"
+            data-bs-toggle="modal" data-bs-target="#projectModal"
+            data-project-id="abbot-kinney">
+            <div class="arch-card-media">
+              <img src="images/project-abbot-kinney.jpg" alt="Abbot Kinney Fluted Storefront" class="arch-card-img" data-parallax-img />
+              <span class="unbuilt-badge font-mono">UNBUILT WORK</span>
+            </div>
+            <div class="arch-card-body pt-3">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <span class="font-mono small text-muted-arch">03 &middot; RETAIL DISPLAY INSTALLATION</span>
+                <span class="font-mono small text-muted-arch">1,100 SF</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 mb-0 arch-card-title">Abbot Kinney Fluted Storefront</h3>
+                <i class="bi bi-arrow-up-right arch-card-arrow"></i>
+              </div>
+              <p class="small text-muted-arch mt-2 mb-0">Venice, CA. Curved plaster ribs and travertine plinths shifting sightlines from the sidewalk.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="col-md-6 portfolio-item reveal reveal-delay-1" data-category="residential">
+          <article class="arch-card h-100" role="button" tabindex="0"
+            data-bs-toggle="modal" data-bs-target="#projectModal"
+            data-project-id="mar-vista">
+            <div class="arch-card-media">
+              <img src="images/project-mar-vista.jpg" alt="Mar Vista Courtyard House interior" class="arch-card-img" data-parallax-img />
+              <span class="unbuilt-badge font-mono">UNBUILT WORK</span>
+            </div>
+            <div class="arch-card-body pt-3">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <span class="font-mono small text-muted-arch">04 &middot; SINGLE-FAMILY RESIDENCE</span>
+                <span class="font-mono small text-muted-arch">3,100 SF</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 mb-0 arch-card-title">Mar Vista Courtyard House</h3>
+                <i class="bi bi-arrow-up-right arch-card-arrow"></i>
+              </div>
+              <p class="small text-muted-arch mt-2 mb-0">Mar Vista, CA. Split-level residence organized around a cantilevered oak stair and garden courtyard.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 05 -->
+        <div class="col-md-6 portfolio-item reveal" data-category="retail">
+          <article class="arch-card h-100" role="button" tabindex="0"
+            data-bs-toggle="modal" data-bs-target="#projectModal"
+            data-project-id="arts-district">
+            <div class="arch-card-media">
+              <img src="images/project-arts-district.jpg" alt="Arts District CNC Rib Wall interior" class="arch-card-img" data-parallax-img />
+              <span class="unbuilt-badge font-mono">UNBUILT WORK</span>
+            </div>
+            <div class="arch-card-body pt-3">
+              <div class="d-flex justify-content-between align-items-baseline mb-1">
+                <span class="font-mono small text-muted-arch">05 &middot; RETAIL DISPLAY INSTALLATION</span>
+                <span class="font-mono small text-muted-arch">850 SF</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <h3 class="h5 mb-0 arch-card-title">Arts District CNC Rib Wall</h3>
+                <i class="bi bi-arrow-up-right arch-card-arrow"></i>
+              </div>
+              <p class="small text-muted-arch mt-2 mb-0">Los Angeles, CA. Dry-assembled birch plywood fins and slotted aluminum shelves in a raw concrete loft.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section id="services" class="section-arch bg-surface-white border-top border-arch">
+    <div class="container">
+      <div class="row justify-content-between align-items-end mb-5 gy-3 reveal">
+        <div class="col-lg-6">
+          <span class="section-index font-mono">02 / SERVICES</span>
+          <h2 class="section-title mt-2 mb-0">Scope of Work</h2>
+        </div>
+        <div class="col-lg-5">
+          <p class="text-muted-arch mb-0">
+            Independent architectural services for homeowners, retail brands, and architecture or development teams looking for senior contract support.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4 reveal">
+          <div class="service-panel h-100 pt-4">
+            <span class="font-mono small text-accent-arch d-block mb-3">01 / RESIDENTIAL</span>
+            <h3 class="h5 fw-bold mb-3">Single-Family Homes</h3>
+            <p class="text-muted-arch small mb-4">
+              Ground-up custom residences, hillside lots, additions, and ADUs from early feasibility through construction administration.
+            </p>
+            <ul class="list-unstyled arch-list small mb-0">
+              <li>Zoning, Setbacks &amp; Feasibility</li>
+              <li>Schematic &amp; Design Development</li>
+              <li>Construction Documents</li>
+              <li>Consultant Coordination &amp; CA</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 reveal reveal-delay-1">
+          <div class="service-panel h-100 pt-4">
+            <span class="font-mono small text-accent-arch d-block mb-3">02 / RETAIL</span>
+            <h3 class="h5 fw-bold mb-3">Retail Displays &amp; Pop-Ups</h3>
+            <p class="text-muted-arch small mb-4">
+              Storefront installations, display walls, and custom millwork fixtures detailed for clean fabrication and quick site assembly.
+            </p>
+            <ul class="list-unstyled arch-list small mb-0">
+              <li>Storefront &amp; Display Design</li>
+              <li>Custom Millwork &amp; Fixture Details</li>
+              <li>CNC &amp; Digital Fabrication Files</li>
+              <li>Shop Drawing &amp; Install Review</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4 reveal reveal-delay-2">
+          <div class="service-panel h-100 pt-4">
+            <span class="font-mono small text-accent-arch d-block mb-3">03 / CONTRACT</span>
+            <h3 class="h5 fw-bold mb-3">Contract Delivery &amp; BIM</h3>
+            <p class="text-muted-arch small mb-4">
+              Independent licensed support for design studios and developers needing technical coordination, BIM management, and code compliance.
+            </p>
+            <ul class="list-unstyled arch-list small mb-0">
+              <li>BIM Management &amp; Standards</li>
+              <li>Revit Modeling &amp; Coordination</li>
+              <li>Code &amp; Occupancy Analysis</li>
+              <li>Construction Administration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRACTICE & CREDENTIALS (ABOUT) ==================== -->
+  <section id="practice" class="section-arch border-top border-arch">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-5 reveal">
+          <span class="section-index font-mono">03 / ABOUT</span>
+          <h2 class="section-title mt-2 mb-4">Daniel Nguyen, Licensed Architect</h2>
+          <p class="text-muted-arch mb-4">
+            Licensed architect in Los Angeles with over ten years of experience across civic buildings, museums, workplaces, and custom residences in California.
+          </p>
+          <p class="text-muted-arch mb-4">
+            Trained at the <strong>Yale School of Architecture</strong> and <strong>UCLA</strong>, with a background spanning physical modelmaking, CNC fabrication, technical coordination, and BIM management.
+          </p>
+
+          <div class="pt-3 border-top border-arch">
+            <div class="font-mono small text-muted-arch mb-2">EDUCATION</div>
+            <div class="mb-2">
+              <div class="fw-semibold small">Yale School of Architecture</div>
+              <div class="small text-muted-arch">Master of Architecture I &middot; 2012&ndash;2015</div>
+            </div>
+            <div>
+              <div class="fw-semibold small">University of California, Los Angeles (UCLA)</div>
+              <div class="small text-muted-arch">B.A. Architectural Studies &middot; 2009&ndash;2011</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1 reveal reveal-delay-1">
+          <div class="font-mono small text-muted-arch mb-3">EXPERIENCE</div>
+          <div class="cv-timeline">
+            <div class="cv-item pb-4 mb-4 border-bottom border-arch">
+              <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+                <h3 class="h6 fw-bold mb-0">Gensler</h3>
+                <span class="font-mono small text-muted-arch">2022 &ndash; Present</span>
+              </div>
+              <div class="small text-accent-arch mb-2">Technical Designer &middot; Los Angeles, CA</div>
+              <p class="small text-muted-arch mb-0">
+                Technical delivery, consultant coordination, code compliance, and custom Revit/pyRevit workflow tools across concurrent commercial portfolios.
+              </p>
+            </div>
+
+            <div class="cv-item pb-4 mb-4 border-bottom border-arch">
+              <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+                <h3 class="h6 fw-bold mb-0">Johnson Favaro Architecture and Urban Design</h3>
+                <span class="font-mono small text-muted-arch">2016 &ndash; 2022</span>
+              </div>
+              <div class="small text-accent-arch mb-2">Design Associate &middot; Culver City, CA</div>
+              <p class="small text-muted-arch mb-0">
+                Project development from pre-design through construction administration for cultural, civic, and university buildings, plus office BIM standards.
+              </p>
+            </div>
+
+            <div class="cv-item pb-4 mb-4 border-bottom border-arch">
+              <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+                <h3 class="h6 fw-bold mb-0">Michael Maltzan Architecture</h3>
+                <span class="font-mono small text-muted-arch">2015 &ndash; 2016</span>
+              </div>
+              <div class="small text-accent-arch mb-2">Los Angeles, CA</div>
+              <p class="small text-muted-arch mb-0">
+                Rapid schematic physical models, digital fabrication files, and visualization for residential and cultural projects.
+              </p>
+            </div>
+
+            <div class="cv-item">
+              <div class="d-flex justify-content-between flex-wrap gap-1 mb-1">
+                <h3 class="h6 fw-bold mb-0">Ehrlich Architects (EYRC)</h3>
+                <span class="font-mono small text-muted-arch">2011 &ndash; 2012</span>
+              </div>
+              <div class="small text-accent-arch mb-2">Culver City, CA</div>
+              <p class="small text-muted-arch mb-0">
+                Residential interior study models, custom interior details, and schematic Revit modeling.
+              </p>
+            </div>
+          </div>
+
+          <!-- Technical Stack -->
+          <div class="mt-4 pt-3 border-top border-arch">
+            <div class="font-mono small text-muted-arch mb-3">SOFTWARE &amp; FABRICATION</div>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tech-chip font-mono">Revit / pyRevit</span>
+              <span class="tech-chip font-mono">Rhino &amp; Grasshopper</span>
+              <span class="tech-chip font-mono">AutoCAD</span>
+              <span class="tech-chip font-mono">V-Ray &amp; Enscape</span>
+              <span class="tech-chip font-mono">Cinema4D</span>
+              <span class="tech-chip font-mono">5-Axis CNC</span>
+              <span class="tech-chip font-mono">7-Axis Robotics</span>
+              <span class="tech-chip font-mono">3D Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="section-arch bg-charcoal text-white">
+    <div class="container">
+      <div class="row gy-5 align-items-start">
+        <div class="col-lg-5 reveal">
+          <span class="section-index font-mono text-accent-light">04 / CONTACT</span>
+          <h2 class="section-title text-white mt-2 mb-3">Get in Touch</h2>
+          <p class="text-white-50 mb-4">
+            Available for single-family residential commissions, retail display installations, and contract technical or BIM support.
+          </p>
+
+          <div class="d-flex flex-column gap-3 pt-2">
+            <div>
+              <div class="font-mono small text-white-50">EMAIL</div>
+              <a href="mailto:hello@doniolnguyen.com" class="text-white text-decoration-none fs-6 fw-medium contact-link">hello@doniolnguyen.com</a>
+            </div>
+            <div>
+              <div class="font-mono small text-white-50">PHONE</div>
+              <a href="tel:+13105961508" class="text-white text-decoration-none fs-6 fw-medium contact-link">+1 (310) 596-1508</a>
+            </div>
+            <div>
+              <div class="font-mono small text-white-50">LOCATION</div>
+              <div class="fs-6">Los Angeles, CA &middot; California &amp; Remote</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 offset-lg-1 reveal reveal-delay-1">
+          <form id="contactForm" class="needs-validation arch-form" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nameInput" class="form-label font-mono small text-white-50">NAME *</label>
+                <input type="text" class="form-control arch-input" id="nameInput" placeholder="Your name" required />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="emailInput" class="form-label font-mono small text-white-50">EMAIL *</label>
+                <input type="email" class="form-control arch-input" id="emailInput" placeholder="you@example.com" required />
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="scopeSelect" class="form-label font-mono small text-white-50">PROJECT TYPE *</label>
+                <select class="form-select arch-input" id="scopeSelect" required>
+                  <option value="" selected disabled>Select scope...</option>
+                  <option value="Single-Family Residence">Single-Family Residence</option>
+                  <option value="Renovation / ADU">Renovation or ADU</option>
+                  <option value="Retail Display Installation">Retail Display Installation</option>
+                  <option value="Contract Technical / BIM Support">Contract Technical / BIM Support</option>
+                </select>
+                <div class="invalid-feedback">Please choose a project type.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="locationInput" class="form-label font-mono small text-white-50">SITE LOCATION</label>
+                <input type="text" class="form-control arch-input" id="locationInput" placeholder="e.g. Los Angeles, CA" />
+              </div>
+              <div class="col-12">
+                <label for="messageInput" class="form-label font-mono small text-white-50">PROJECT BRIEF *</label>
+                <textarea class="form-control arch-input" id="messageInput" rows="4" placeholder="Site location, scope, and rough schedule..." required></textarea>
+                <div class="invalid-feedback">Please include a brief note about your project.</div>
+              </div>
+              <div class="col-12 pt-2">
+                <button type="submit" class="btn btn-arch-light px-4 py-2">
+                  Send Message <i class="bi bi-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+
+            <div id="formSuccess" class="alert alert-light d-none mt-4 mb-0 rounded-0 border-0 small" role="alert">
+              <i class="bi bi-check2-circle me-2 text-success"></i>
+              <strong>Message received.</strong> Thank you for reaching out.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="py-4 bg-charcoal border-top border-white border-opacity-10 text-white-50">
+    <div class="container">
+      <div class="row align-items-center justify-content-between gy-2 small">
+        <div class="col-md-6 font-mono">
+          &copy; <span id="currentYear">2026</span> DANIEL NGUYEN &middot; LICENSED ARCHITECT &middot; DONIOLNGUYEN.COM
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#home" class="text-white-50 text-decoration-none font-mono back-to-top">
+            BACK TO TOP <i class="bi bi-arrow-up ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT CASE STUDY + PROCESS MODAL ==================== -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0 rounded-0 overflow-hidden bg-surface-alabaster">
+        <!-- Main Interactive Gallery Stage -->
+        <div class="position-relative modal-hero-wrap">
+          <img id="modalImage" src="" alt="" class="w-100 h-100 modal-stage-img" />
+          <button type="button" class="btn-close btn-close-white modal-close-arch" data-bs-dismiss="modal" aria-label="Close"></button>
+          <span id="modalStatus" class="unbuilt-badge font-mono">UNBUILT WORK</span>
+
+          <!-- Prev / Next Gallery Controls -->
+          <button type="button" class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Previous image">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button type="button" class="gallery-nav gallery-next" id="galleryNext" aria-label="Next image">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+
+          <!-- Active Slide Caption Bar -->
+          <div class="gallery-caption-bar font-mono d-flex justify-content-between align-items-center">
+            <span id="modalSlideCaption">Exterior View</span>
+            <span id="modalSlideCounter">1 / 2</span>
+          </div>
+        </div>
+
+        <!-- Process & Views Thumbnail Strip -->
+        <div class="modal-thumbs-bar px-4 px-lg-5 py-3 border-bottom border-arch bg-surface-white" id="modalThumbsBar">
+          <div class="d-flex align-items-center gap-3 flex-wrap" id="modalThumbs"></div>
+        </div>
+
+        <!-- Project Details -->
+        <div class="modal-body p-4 p-lg-5">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div id="modalTypology" class="font-mono small text-accent-arch mb-2"></div>
+              <h3 class="h2 fw-bold mb-3" id="projectModalLabel">Project Title</h3>
+              <p id="modalSummary" class="text-muted-arch mb-0"></p>
+            </div>
+            <div class="col-lg-4 border-start-lg border-arch ps-lg-4">
+              <div class="mb-3">
+                <div class="font-mono small text-muted-arch">STATUS</div>
+                <div class="small fw-semibold">Unbuilt Work</div>
+              </div>
+              <div class="mb-3">
+                <div class="font-mono small text-muted-arch">LOCATION</div>
+                <div id="modalLocation" class="small fw-semibold"></div>
+              </div>
+              <div class="mb-3">
+                <div class="font-mono small text-muted-arch">APPROX. AREA</div>
+                <div id="modalArea" class="small fw-semibold"></div>
+              </div>
+              <div class="mb-4">
+                <div class="font-mono small text-muted-arch">MATERIALS</div>
+                <div id="modalMaterials" class="small text-muted-arch"></div>
+              </div>
+              <a href="#contact" class="btn btn-arch-dark w-100" data-bs-dismiss="modal">
+                Inquire <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Custom Architectural Scripts & Parallax -->
+  <script src="js/main.js"></script>
+</body>
+</html>

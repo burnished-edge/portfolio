@@ -1,0 +1,736 @@
+/* ==========================================================================
+   Daniel Nguyen — Licensed Architect (doniolnguyen.com)
+   Architectural Portfolio Stylesheet (Layered over Bootstrap 5.3)
+   ========================================================================== */
+
+:root {
+  --arch-bg: #f6f5f1;
+  --arch-white: #ffffff;
+  --arch-charcoal: #151513;
+  --arch-ink: #1f1f1c;
+  --arch-muted: #65635d;
+  --arch-border: #e2dfd7;
+  --arch-accent: #8c6244;
+  --arch-accent-light: #c9a68a;
+  --font-display: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+  --ease-arch: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--arch-bg);
+  color: var(--arch-ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+  color: var(--arch-charcoal);
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+.text-muted-arch {
+  color: var(--arch-muted);
+  line-height: 1.68;
+}
+
+.text-accent-arch {
+  color: var(--arch-accent);
+}
+
+.text-accent-light {
+  color: var(--arch-accent-light);
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.bg-surface-white {
+  background-color: var(--arch-white);
+}
+
+.bg-surface-alabaster {
+  background-color: var(--arch-bg);
+}
+
+.bg-charcoal {
+  background-color: var(--arch-charcoal);
+}
+
+.border-arch {
+  border-color: var(--arch-border) !important;
+}
+
+.tracking-widest {
+  letter-spacing: 0.16em;
+}
+
+.section-arch {
+  padding: 5.5rem 0;
+}
+
+.section-index {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--arch-accent);
+}
+
+.section-title {
+  font-size: clamp(1.85rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+/* ==========================================================================
+   Scroll Progress Hairline
+   ========================================================================== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--arch-accent);
+  z-index: 1080;
+  transition: width 0.08s linear;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar-arch {
+  padding: 1.25rem 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background-color 0.3s var(--ease-arch), padding 0.3s var(--ease-arch), border-color 0.3s var(--ease-arch);
+}
+
+.navbar-arch .brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.12em;
+  color: #fff;
+  transition: color 0.25s ease;
+}
+
+.navbar-arch .brand-sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.68);
+  margin-top: 3px;
+  transition: color 0.25s ease;
+}
+
+.navbar-arch .nav-link {
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.84);
+  padding: 0.35rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-arch .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.25s var(--ease-arch);
+}
+
+.navbar-arch .nav-link:hover::after,
+.navbar-arch .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-arch .nav-link:hover,
+.navbar-arch .nav-link.active {
+  color: #fff;
+}
+
+.navbar-arch .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.btn-arch-nav {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  transition: all 0.22s var(--ease-arch);
+}
+
+.btn-arch-nav:hover {
+  background-color: #fff;
+  color: var(--arch-charcoal);
+}
+
+/* Scrolled Navbar State */
+.navbar-arch.scrolled {
+  padding: 0.85rem 0;
+  background-color: rgba(246, 245, 241, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom-color: var(--arch-border);
+}
+
+.navbar-arch.scrolled .brand-name {
+  color: var(--arch-charcoal);
+}
+
+.navbar-arch.scrolled .brand-sub {
+  color: var(--arch-muted);
+}
+
+.navbar-arch.scrolled .nav-link {
+  color: var(--arch-muted);
+}
+
+.navbar-arch.scrolled .nav-link:hover,
+.navbar-arch.scrolled .nav-link.active {
+  color: var(--arch-charcoal);
+}
+
+.navbar-arch.scrolled .navbar-toggler-icon {
+  filter: none;
+}
+
+.navbar-arch.scrolled .btn-arch-nav {
+  border-color: var(--arch-charcoal);
+  color: var(--arch-charcoal);
+}
+
+.navbar-arch.scrolled .btn-arch-nav:hover {
+  background-color: var(--arch-charcoal);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn-arch-light {
+  background-color: #fff;
+  color: var(--arch-charcoal);
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.75rem 1.65rem;
+  transition: transform 0.22s var(--ease-arch), background-color 0.22s ease, color 0.22s ease;
+}
+
+.btn-arch-light:hover {
+  background-color: var(--arch-bg);
+  color: var(--arch-charcoal);
+  transform: translateY(-1px);
+}
+
+.btn-arch-ghost {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.75rem 1.65rem;
+  transition: background-color 0.22s ease, border-color 0.22s ease;
+}
+
+.btn-arch-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-arch-dark {
+  background-color: var(--arch-charcoal);
+  color: #fff;
+  border: 1px solid var(--arch-charcoal);
+  border-radius: 0;
+  font-size: 0.86rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.22s ease, border-color 0.22s ease;
+}
+
+.btn-arch-dark:hover {
+  background-color: var(--arch-accent);
+  border-color: var(--arch-accent);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Hero Section (Full-Bleed Parallax)
+   ========================================================================== */
+.hero-arch {
+  min-height: 94vh;
+  background-color: var(--arch-charcoal);
+}
+
+.hero-bg-wrap {
+  position: absolute;
+  inset: -12% 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(16, 16, 14, 0.84) 0%,
+    rgba(16, 16, 14, 0.42) 48%,
+    rgba(16, 16, 14, 0.34) 100%
+  );
+}
+
+.hero-eyebrow {
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  color: var(--arch-accent-light);
+}
+
+.hero-heading {
+  font-weight: 500;
+  line-height: 1.08;
+  max-width: 18ch;
+}
+
+.hero-lead {
+  font-size: 1.04rem;
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+.unbuilt-pill-dark {
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  padding: 0.22rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  background: rgba(21, 21, 19, 0.45);
+  backdrop-filter: blur(6px);
+}
+
+/* ==========================================================================
+   Portfolio Section & Cards
+   ========================================================================== */
+.portfolio-notice {
+  background-color: var(--arch-white);
+  border-left: 3px solid var(--arch-accent);
+  border-top: 1px solid var(--arch-border);
+  border-right: 1px solid var(--arch-border);
+  border-bottom: 1px solid var(--arch-border);
+  padding: 0.9rem 1.2rem;
+  color: var(--arch-muted);
+}
+
+.portfolio-notice i {
+  color: var(--arch-accent);
+}
+
+.btn-arch-filter {
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.48rem 1rem;
+  color: var(--arch-muted);
+  background: transparent;
+  border: 1px solid var(--arch-border);
+  transition: all 0.2s var(--ease-arch);
+}
+
+.btn-arch-filter:hover {
+  border-color: var(--arch-charcoal);
+  color: var(--arch-charcoal);
+}
+
+.btn-arch-filter.active {
+  background-color: var(--arch-charcoal);
+  border-color: var(--arch-charcoal);
+  color: #fff;
+}
+
+.arch-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.arch-card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: #e6e3db;
+}
+
+.arch-card-img {
+  width: 100%;
+  height: 114%;
+  object-fit: cover;
+  display: block;
+  margin-top: -7%;
+  will-change: transform;
+  transition: filter 0.35s var(--ease-arch);
+}
+
+.arch-card:hover .arch-card-img {
+  filter: contrast(1.03);
+}
+
+.unbuilt-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  padding: 0.28rem 0.65rem;
+  background: rgba(21, 21, 19, 0.76);
+  backdrop-filter: blur(6px);
+  color: #fff;
+}
+
+.process-pill {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 0.28rem 0.65rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--arch-charcoal);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.22s var(--ease-arch), transform 0.22s var(--ease-arch);
+}
+
+.arch-card:hover .process-pill,
+.arch-card:focus-visible .process-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.arch-card-title {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.arch-card-arrow {
+  color: var(--arch-muted);
+  transition: transform 0.25s var(--ease-arch), color 0.2s ease;
+}
+
+.arch-card:hover .arch-card-title {
+  color: var(--arch-accent);
+}
+
+.arch-card:hover .arch-card-arrow {
+  color: var(--arch-accent);
+  transform: translate(3px, -3px);
+}
+
+/* ==========================================================================
+   Parallax Interlude
+   ========================================================================== */
+.parallax-interlude {
+  min-height: 46vh;
+  padding: 5rem 0;
+  background-color: var(--arch-charcoal);
+}
+
+.interlude-bg {
+  position: absolute;
+  inset: -18% 0;
+  width: 100%;
+  height: 136%;
+  object-fit: cover;
+  will-change: transform;
+}
+
+.interlude-scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 16, 14, 0.66);
+}
+
+.interlude-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 2.6vw, 2.15rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   Services & Practice
+   ========================================================================== */
+.service-panel {
+  border-top: 1px solid var(--arch-charcoal);
+  transition: border-color 0.25s ease;
+}
+
+.service-panel:hover {
+  border-top-color: var(--arch-accent);
+}
+
+.arch-list li {
+  position: relative;
+  padding: 0.32rem 0 0.32rem 1rem;
+  color: var(--arch-ink);
+}
+
+.arch-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.78rem;
+  width: 5px;
+  height: 1px;
+  background-color: var(--arch-accent);
+}
+
+.tech-chip {
+  font-size: 0.72rem;
+  padding: 0.35rem 0.7rem;
+  background-color: var(--arch-white);
+  border: 1px solid var(--arch-border);
+  color: var(--arch-ink);
+}
+
+/* ==========================================================================
+   Contact & Form
+   ========================================================================== */
+.contact-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--arch-accent-light) !important;
+  border-color: var(--arch-accent-light);
+}
+
+.arch-input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0;
+  color: #fff;
+  padding: 0.72rem 0.9rem;
+  font-size: 0.92rem;
+}
+
+.arch-input::placeholder {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.arch-input:focus {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-color: var(--arch-accent-light);
+  color: #fff;
+  box-shadow: none;
+}
+
+.arch-input option {
+  color: var(--arch-charcoal);
+  background-color: #fff;
+}
+
+.back-to-top:hover {
+  color: #fff !important;
+}
+
+/* ==========================================================================
+   Case Study & Process Gallery Modal
+   ========================================================================== */
+.modal-hero-wrap {
+  height: clamp(260px, 52vh, 520px);
+  background-color: #1c1c1a;
+}
+
+.modal-stage-img {
+  object-fit: cover;
+  transition: opacity 0.22s ease;
+}
+
+.modal-stage-img.is-drawing {
+  object-fit: contain;
+  background-color: #f4f2ec;
+}
+
+.modal-close-arch {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 4;
+  background-color: rgba(21, 21, 19, 0.6);
+  padding: 0.6rem;
+  border-radius: 0;
+  opacity: 0.9;
+}
+
+.modal-close-arch:hover {
+  opacity: 1;
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: rgba(21, 21, 19, 0.62);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.gallery-nav:hover {
+  background: rgba(21, 21, 19, 0.9);
+}
+
+.gallery-prev { left: 14px; }
+.gallery-next { right: 14px; }
+
+.gallery-caption-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to top, rgba(16, 16, 14, 0.78), transparent);
+}
+
+.modal-thumb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.35rem;
+  border: 1px solid var(--arch-border);
+  background: var(--arch-bg);
+  color: var(--arch-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.modal-thumb-btn img {
+  width: 48px;
+  height: 32px;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-thumb-btn:hover {
+  border-color: var(--arch-charcoal);
+  color: var(--arch-charcoal);
+}
+
+.modal-thumb-btn.active {
+  border-color: var(--arch-charcoal);
+  background: var(--arch-charcoal);
+  color: #fff;
+}
+
+/* ==========================================================================
+   Crisp Scroll-Reveal Animations
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition: opacity 0.48s var(--ease-arch), transform 0.48s var(--ease-arch);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 70ms;
+}
+
+.reveal-delay-2 {
+  transition-delay: 140ms;
+}
+
+@media (min-width: 992px) {
+  .border-start-lg {
+    border-left: 1px solid var(--arch-border) !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-arch {
+    padding: 4rem 0;
+  }
+
+  .navbar-arch {
+    background-color: rgba(21, 21, 19, 0.88);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-bg-img,
+  .interlude-bg,
+  .arch-card-img {
+    transform: none !important;
+  }
+}

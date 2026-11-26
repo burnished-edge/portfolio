@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#f7f6f2"/>
+
+  <!-- Subtle architectural framing lines -->
+  <g stroke="#e6e3da" stroke-width="0.75" fill="none">
+    <line x1="64" y1="64" x2="1216" y2="64"/>
+    <line x1="64" y1="656" x2="1216" y2="656"/>
+  </g>
+
+  <!-- Vertical Exploded Projection Lines -->
+  <g stroke="#78756e" stroke-width="0.9" stroke-dasharray="5 5" opacity="0.7">
+    <line x1="350" y1="175" x2="350" y2="510"/>
+    <line x1="650" y1="90" x2="650" y2="425"/>
+    <line x1="930" y1="190" x2="930" y2="525"/>
+    <line x1="630" y1="275" x2="630" y2="615"/>
+  </g>
+
+  <!-- ==================== LAYER 4 (BOTTOM): POLISHED CONCRETE SLAB & TRAVERTINE PLINTHS ==================== -->
+  <g id="floor-plinths">
+    <!-- Floor slab -->
+    <polygon points="350,510 650,400 930,505 630,615" fill="#dfddd5" stroke="#1e1e1c" stroke-width="1.35"/>
+    <polygon points="350,510 630,615 630,636 350,531" fill="#c9c6bd" stroke="#1e1e1c" stroke-width="1.35"/>
+    <polygon points="630,615 930,505 930,526 630,636" fill="#bab7ad" stroke="#1e1e1c" stroke-width="1.35"/>
+
+    <!-- Center monolithic travertine display plinth -->
+    <polygon points="545,512 655,472 720,496 610,536" fill="#ebe3d5" stroke="#1e1e1c" stroke-width="1.3"/>
+    <polygon points="545,512 610,536 610,582 545,558" fill="#ddd3c2" stroke="#1e1e1c" stroke-width="1.3"/>
+    <polygon points="610,536 720,496 720,542 610,582" fill="#cfc3af" stroke="#1e1e1c" stroke-width="1.3"/>
+
+    <!-- Secondary gallery plinth (left) -->
+    <polygon points="445,485 505,463 545,478 485,500" fill="#ebe3d5" stroke="#1e1e1c" stroke-width="1.2"/>
+    <polygon points="445,485 485,500 485,556 445,541" fill="#ddd3c2" stroke="#1e1e1c" stroke-width="1.2"/>
+    <polygon points="485,500 545,478 545,534 485,556" fill="#cfc3af" stroke="#1e1e1c" stroke-width="1.2"/>
+
+    <!-- Rear plinth (right) -->
+    <polygon points="725,462 785,440 825,455 765,477" fill="#ebe3d5" stroke="#1e1e1c" stroke-width="1.2"/>
+    <polygon points="725,462 765,477 765,522 725,507" fill="#ddd3c2" stroke="#1e1e1c" stroke-width="1.2"/>
+    <polygon points="765,477 825,455 825,500 765,522" fill="#cfc3af" stroke="#1e1e1c" stroke-width="1.2"/>
+  </g>
+
+  <!-- ==================== LAYER 3: FLUTED PLASTER & CURVED CAST-CONCRETE RIBS ==================== -->
+  <g id="fluted-ribs">
+    <!-- Rear fluted plaster wall -->
+    <polygon points="350,350 650,240 650,390 350,500" fill="#f3f1eb" stroke="#1e1e1c" stroke-width="1.3"/>
+    <!-- Vertical fluting lines -->
+    <g stroke="#8a877f" stroke-width="0.8">
+      <line x1="375" y1="341" x2="375" y2="491"/>
+      <line x1="400" y1="332" x2="400" y2="482"/>
+      <line x1="425" y1="323" x2="425" y2="473"/>
+      <line x1="450" y1="313" x2="450" y2="463"/>
+      <line x1="475" y1="304" x2="475" y2="454"/>
+      <line x1="500" y1="295" x2="500" y2="445"/>
+      <line x1="525" y1="286" x2="525" y2="436"/>
+      <line x1="550" y1="277" x2="550" y2="427"/>
+      <line x1="575" y1="268" x2="575" y2="418"/>
+      <line x1="600" y1="258" x2="600" y2="408"/>
+      <line x1="625" y1="249" x2="625" y2="399"/>
+    </g>
+
+    <!-- Sculptural curved cast-concrete partition ribs (3 stepped fins) -->
+    <g fill="#d1cfc8" stroke="#1e1e1c" stroke-width="1.35">
+      <path d="M 650,240 L 675,249 L 675,399 L 650,390 Z"/>
+      <path d="M 695,256 Q 718,295 718,415 L 695,406 Q 695,295 675,249 Z" fill="#c3c0b8"/>
+      <path d="M 735,271 Q 758,310 758,430 L 735,421 Q 735,310 715,264 Z" fill="#ceccc4"/>
+      <path d="M 775,286 Q 798,325 798,445 L 775,436 Q 775,325 755,279 Z" fill="#c3c0b8"/>
+    </g>
+
+    <!-- Right-side curved fluted return wall -->
+    <polygon points="815,301 930,344 930,494 815,451" fill="#ebe8e0" stroke="#1e1e1c" stroke-width="1.3"/>
+    <g stroke="#8a877f" stroke-width="0.8">
+      <line x1="838" y1="310" x2="838" y2="460"/>
+      <line x1="861" y1="318" x2="861" y2="468"/>
+      <line x1="884" y1="327" x2="884" y2="477"/>
+      <line x1="907" y1="335" x2="907" y2="485"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 2: BLACK-STEEL STOREFRONT GLAZING (EXPLODED FORWARD) ==================== -->
+  <g id="storefront-glass" transform="translate(-48, 32)">
+    <polygon points="410,432 690,537 690,645 410,540" fill="#dbe6ea" fill-opacity="0.55" stroke="#1e1e1c" stroke-width="2"/>
+    <!-- Entry door & steel mullions -->
+    <g stroke="#1e1e1c" stroke-width="1.6">
+      <line x1="478" y1="458" x2="478" y2="566"/>
+      <line x1="584" y1="497" x2="584" y2="605"/>
+      <!-- Door handle -->
+      <line x1="468" y1="500" x2="468" y2="528" stroke-width="2.2"/>
+    </g>
+  </g>
+
+  <!-- ==================== LAYER 1 (TOP): OVERHEAD TRACK LIGHTING GRID ==================== -->
+  <g id="lighting-grid">
+    <!-- Ceiling outline reference -->
+    <polygon points="350,175 650,65 930,170 630,280" fill="none" stroke="#b5b2a8" stroke-width="1" stroke-dasharray="4 4"/>
+    <!-- Blackened steel track rails -->
+    <g stroke="#1e1e1c" stroke-width="2.2" fill="none">
+      <polyline points="470,175 650,109 810,169 630,235"/>
+      <line x1="555" y1="144" x2="715" y2="204"/>
+    </g>
+    <!-- Track spotlight heads -->
+    <g fill="#1e1e1c">
+      <circle cx="525" cy="155" r="4"/>
+      <circle cx="590" cy="131" r="4"/>
+      <circle cx="660" cy="113" r="4"/>
+      <circle cx="725" cy="137" r="4"/>
+      <circle cx="780" cy="158" r="4"/>
+      <circle cx="620" cy="168" r="4"/>
+      <circle cx="675" cy="189" r="4"/>
+    </g>
+  </g>
+</svg>

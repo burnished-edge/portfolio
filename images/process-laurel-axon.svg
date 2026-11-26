@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <rect width="1280" height="720" fill="#f7f6f2"/>
+
+  <!-- Subtle architectural grid frame -->
+  <g stroke="#e6e3da" stroke-width="0.75" fill="none">
+    <line x1="64" y1="64" x2="1216" y2="64"/>
+    <line x1="64" y1="656" x2="1216" y2="656"/>
+  </g>
+
+  <!-- Vertical Exploded Projection Lines (Isometric alignment) -->
+  <g stroke="#78756e" stroke-width="0.9" stroke-dasharray="5 5" opacity="0.7">
+    <line x1="360" y1="205" x2="360" y2="520"/>
+    <line x1="650" y1="100" x2="650" y2="415"/>
+    <line x1="940" y1="215" x2="940" y2="530"/>
+    <line x1="650" y1="315" x2="650" y2="615"/>
+  </g>
+
+  <!-- ==================== LAYER 3 (BOTTOM): CONCRETE COURTYARD & HILLSIDE PLINTH ==================== -->
+  <g id="plinth">
+    <!-- Hillside slope steps -->
+    <polygon points="260,555 650,400 1020,545 630,680" fill="#e6e4dc" stroke="#1e1e1c" stroke-width="1"/>
+    <!-- Concrete retaining plinth -->
+    <polygon points="360,520 650,415 940,530 650,635" fill="#d9d7cf" stroke="#1e1e1c" stroke-width="1.35"/>
+    <!-- Front-left vertical concrete face -->
+    <polygon points="360,520 650,635 650,665 360,550" fill="#c7c4ba" stroke="#1e1e1c" stroke-width="1.35"/>
+    <!-- Front-right vertical concrete face -->
+    <polygon points="650,635 940,530 940,560 650,665" fill="#b8b5ab" stroke="#1e1e1c" stroke-width="1.35"/>
+    <!-- Courtyard concrete paver joints -->
+    <g stroke="#7c7970" stroke-width="0.75">
+      <line x1="418" y1="543" x2="708" y2="438"/>
+      <line x1="476" y1="566" x2="766" y2="461"/>
+      <line x1="534" y1="589" x2="824" y2="484"/>
+      <line x1="592" y1="612" x2="882" y2="507"/>
+    </g>
+    <!-- Planter cutout -->
+    <polygon points="735,530 855,486 905,506 785,550" fill="#cdd4c5" stroke="#1e1e1c" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== LAYER 2 (MIDDLE): WHITE STUCCO VOLUMES & STEEL GLAZING ==================== -->
+  <g id="walls">
+    <!-- Rear stucco wing (2-story tower) -->
+    <polygon points="650,275 830,346 830,442 650,371" fill="#ffffff" stroke="#1e1e1c" stroke-width="1.35"/>
+    <polygon points="650,275 560,308 560,404 650,371" fill="#efede7" stroke="#1e1e1c" stroke-width="1.35"/>
+    <polygon points="650,275 830,346 740,379 560,308" fill="#f7f6f2" stroke="#1e1e1c" stroke-width="1.35"/>
+
+    <!-- Main living volume back wall -->
+    <polygon points="360,380 560,308 560,404 360,476" fill="#f2f0ea" stroke="#1e1e1c" stroke-width="1.35"/>
+    <!-- Living volume solid plaster end wall -->
+    <polygon points="360,380 485,430 485,526 360,476" fill="#ffffff" stroke="#1e1e1c" stroke-width="1.35"/>
+
+    <!-- Floor-to-ceiling black-steel sliding glass wall -->
+    <polygon points="485,430 650,495 650,591 485,526" fill="#d9e5ea" fill-opacity="0.82" stroke="#1e1e1c" stroke-width="1.5"/>
+    <!-- Steel mullions -->
+    <g stroke="#1e1e1c" stroke-width="1.15">
+      <line x1="526" y1="446" x2="526" y2="542"/>
+      <line x1="567" y1="462" x2="567" y2="558"/>
+      <line x1="608" y1="479" x2="608" y2="575"/>
+      <line x1="485" y1="450" x2="650" y2="515" stroke-width="0.8"/>
+    </g>
+
+    <!-- Return glass wall toward courtyard -->
+    <polygon points="650,495 795,442 795,538 650,591" fill="#cddce2" fill-opacity="0.78" stroke="#1e1e1c" stroke-width="1.5"/>
+    <g stroke="#1e1e1c" stroke-width="1.1">
+      <line x1="698" y1="477" x2="698" y2="573"/>
+      <line x1="746" y1="460" x2="746" y2="556"/>
+    </g>
+
+    <!-- Interior kitchen island silhouette -->
+    <polygon points="525,455 595,430 630,444 560,469" fill="#e5dec9" stroke="#1e1e1c" stroke-width="0.9"/>
+    <polygon points="525,455 560,469 560,492 525,478" fill="#d8cfb6" stroke="#1e1e1c" stroke-width="0.9"/>
+  </g>
+
+  <!-- ==================== LAYER 1 (TOP): CANTILEVERED CEDAR RAFTER ROOF ==================== -->
+  <g id="roof">
+    <!-- Lower roof fascia & soffit shadow -->
+    <polygon points="340,212 650,100 940,215 630,327" fill="#d7b68a" stroke="#1e1e1c" stroke-width="1.4"/>
+    <!-- Roof thickness edges -->
+    <polygon points="340,212 630,327 630,342 340,227" fill="#c19d6e" stroke="#1e1e1c" stroke-width="1.35"/>
+    <polygon points="630,327 940,215 940,230 630,342" fill="#ae8a5c" stroke="#1e1e1c" stroke-width="1.35"/>
+
+    <!-- Rhythmic exposed cedar rafters along roof plane -->
+    <g stroke="#5e462a" stroke-width="0.85">
+      <line x1="365" y1="203" x2="655" y2="318"/>
+      <line x1="390" y1="194" x2="680" y2="309"/>
+      <line x1="415" y1="185" x2="705" y2="300"/>
+      <line x1="440" y1="176" x2="730" y2="291"/>
+      <line x1="465" y1="167" x2="755" y2="282"/>
+      <line x1="490" y1="158" x2="780" y2="273"/>
+      <line x1="515" y1="149" x2="805" y2="264"/>
+      <line x1="540" y1="140" x2="830" y2="255"/>
+      <line x1="565" y1="131" x2="855" y2="246"/>
+      <line x1="590" y1="122" x2="880" y2="237"/>
+      <line x1="615" y1="113" x2="905" y2="228"/>
+    </g>
+
+    <!-- Upper clerestory / canopy plane -->
+    <polygon points="340,206 650,94 940,209 630,321" fill="#efeae0" fill-opacity="0.88" stroke="#1e1e1c" stroke-width="1.35"/>
+    <!-- Skylight / clerestory opening -->
+    <polygon points="560,180 685,135 765,167 640,212" fill="#dbe6ea" stroke="#1e1e1c" stroke-width="1.1"/>
+  </g>
+</svg>
