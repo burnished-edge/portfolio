@@ -16,7 +16,7 @@ const PROJECTS = {
       'Set on a sloped canyon lot, the house uses a deep cedar rafter roof to shade the patio through the afternoon while sliding steel doors open the living room directly onto the courtyard.',
     slides: [
       { src: 'images/project-laurel-canyon.jpg', label: '01 · Exterior View', isDrawing: false },
-      { src: 'images/process-laurel-axon.svg', label: '02 · Exploded Axon', isDrawing: true },
+      { src: 'images/project-laurel-canyon-bedroom.jpg', label: '02 · Primary Bedroom', isDrawing: false },
     ],
   },
   'silver-lake': {
@@ -31,7 +31,7 @@ const PROJECTS = {
       'A board-formed concrete base anchors the residence into the slope while a low timber roof floats underneath existing oaks, framing views toward the reservoir and downtown.',
     slides: [
       { src: 'images/project-silver-lake.jpg', label: '01 · Exterior View', isDrawing: false },
-      { src: 'images/process-silver-diagram.jpg', label: '02 · Exploded Axon', isDrawing: true },
+      { src: 'images/project-silver-lake-bath.jpg', label: '02 · Primary Bath', isDrawing: false },
     ],
   },
   'abbot-kinney': {
@@ -46,7 +46,7 @@ const PROJECTS = {
       'A street-facing retail installation where curved plaster and cast-concrete ribs shift sightlines around travertine plinths as pedestrians move past the storefront.',
     slides: [
       { src: 'images/project-abbot-kinney.jpg', label: '01 · Storefront View', isDrawing: false },
-      { src: 'images/process-abbot-axon.svg', label: '02 · Storefront Axon', isDrawing: true },
+      { src: 'images/project-abbot-kinney-lounge.jpg', label: '02 · Rear Fitting Alcove', isDrawing: false },
     ],
   },
   'mar-vista': {
@@ -61,6 +61,7 @@ const PROJECTS = {
       'A split-level residence organized around a cantilevered oak stair and pocket doors opening onto an olive-tree courtyard, pulling natural light deep into the plan.',
     slides: [
       { src: 'images/project-mar-vista.jpg', label: '01 · Living & Courtyard', isDrawing: false },
+      { src: 'images/project-mar-vista-kitchen.jpg', label: '02 · Kitchen', isDrawing: false },
     ],
   },
   'arts-district': {
@@ -75,7 +76,8 @@ const PROJECTS = {
       'A dry-assembled retail display system for a raw concrete loft. Serial CNC-milled birch plywood fins carry slotted aluminum shelves and concealed linear lighting.',
     slides: [
       { src: 'images/project-arts-district.jpg', label: '01 · Installed View', isDrawing: false },
-      { src: 'images/process-arts-model.jpg', label: '02 · 1:10 Scale Prototype', isDrawing: false },
+      { src: 'images/project-arts-district-detail.jpg', label: '02 · Rib & Shelf Detail', isDrawing: false },
+      { src: 'images/process-arts-model.jpg', label: '03 · 1:10 Scale Prototype', isDrawing: false },
     ],
   },
 };
